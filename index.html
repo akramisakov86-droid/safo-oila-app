@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAFO OILA — Ҳомиладорлик ёрдамчиси</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans p-4">
+
+    <div class="max-w-md mx-auto space-y-4">
+        <!-- Шахсий кабинет шапкаси -->
+        <div class="bg-white p-4 rounded-2xl shadow-sm flex items-center justify-between">
+            <div>
+                <h1 class="text-lg font-bold text-slate-900">Ассалому алайкум, ҳурматли онажон!</h1>
+                <p class="text-sm text-slate-500">Сиз ҳомиладорликнинг <span class="text-rose-500 font-semibold">24-ҳафтасидасиз</span> (6 ой 0 кун)</p>
+            </div>
+            <div class="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center text-xl">👶</div>
+        </div>
+
+        <!-- Ҳозирги кун ҳолати -->
+        <div class="bg-rose-50 border border-rose-100 p-4 rounded-2xl">
+            <h2 class="font-semibold text-rose-900 mb-1">Бугун ўзингизни қандай ҳис қилаяпсиз?</h2>
+            <p class="text-xs text-rose-700 mb-3">Ҳар кунлик кузатув соғлиғингиз гаровидир.</p>
+            <div class="grid grid-cols-2 gap-2">
+                <button onclick="alert('Раҳмат! Ҳолатингиз шифокорга юборилди.')" class="bg-rose-500 text-white py-2 rounded-xl text-sm font-medium shadow hover:bg-rose-600">Менга ёрдам керак</button>
+                <button onclick="alert('Овозли хабар режими фаоллашди')" class="bg-white text-rose-700 border border-rose-200 py-2 rounded-xl text-sm font-medium">🎤 Овозли хабар</button>
+            </div>
+        </div>
+
+        <!-- Асосий меню тугмалари -->
+        <div class="grid grid-cols-2 gap-3">
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between cursor-pointer hover:bg-slate-50">
+                <div class="w-8 h-8 bg-emerald-100 rounded-lg flex items-center justify-center text-emerald-600 mb-2">🤰</div>
+                <span class="font-semibold text-sm">Менинг ҳафтам</span>
+            </div>
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between cursor-pointer hover:bg-slate-50">
+                <div class="w-8 h-8 bg-indigo-100 rounded-lg flex items-center justify-center text-indigo-600 mb-2">🧪</div>
+                <span class="font-semibold text-sm">Текширувларим</span>
+            </div>
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between cursor-pointer hover:bg-slate-50">
+                <div class="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center text-amber-600 mb-2">🏥</div>
+                <span class="font-semibold text-sm">Яқин туғруқхона</span>
+            </div>
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between cursor-pointer hover:bg-slate-50">
+                <div class="w-8 h-8 bg-sky-100 rounded-lg flex items-center justify-center text-sky-600 mb-2">⚙️</div>
+                <span class="font-semibold text-sm">Созламалар</span>
+            </div>
+        </div>
+
+        <!-- Шошилинч 103 тугмаси -->
+        <a href="tel:103" class="block bg-red-600 text-white text-center py-3 rounded-2xl font-bold shadow-md hover:bg-red-700">
+            🚨 Шошилинч ёрдам (103 га қўнғироқ қилиш)
+        </a>
+    </div>
+
+    <script>
+        let tg = window.Telegram.WebApp;
+        tg.expand(); // Иловани тўлиқ экранда очворади
+    </script>
+</body>
+</html>
